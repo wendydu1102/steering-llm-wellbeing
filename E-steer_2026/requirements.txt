@@ -1,0 +1,10 @@
+# Local (CPU or your own GPU) dependencies. Pinned to the versions this
+# project was developed and tested against.
+#
+# For DSMLP, use requirements-dsmlp.txt instead -- the scipy-ml-notebook
+# container image already ships a CUDA-matched PyTorch build, and
+# reinstalling torch from PyPI on top of it can silently break GPU support.
+torch==2.9.1
+transformers==4.51.0
+numpy==2.3.5
+matplotlib==3.10.6

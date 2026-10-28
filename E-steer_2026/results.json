@@ -1,0 +1,374 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "layer": 12,
+  "typical_norm": 113.68498992919922,
+  "logic_results": {
+    "valence": [
+      {
+        "axis": "valence",
+        "coeff": -6,
+        "accuracy": 0.4,
+        "n_unparsed": 0,
+        "raw": [
+          {
+            "stmt": "All engineers at the firm know Python. Maria is an engineer at the firm. Therefore, Maria knows Python.",
+            "gold": true,
+            "resp": "True.",
+            "pred": true
+          },
+          {
+            "stmt": "No reptiles are warm-blooded. A snake is a reptile. Therefore, snakes are warm-blooded.",
+            "gold": false,
+            "resp": "True. The conclusion \"A snake is a warm-blooded animal\" logically follows from the given statement that a snake is a reptile and the assumption of being",
+            "pred": true
+          },
+          {
+            "stmt": "If it rains, the game is cancelled. It did not rain. Therefore, the game was cancelled.",
+            "gold": false,
+            "resp": "True.",
+            "pred": true
+          },
+          {
+            "stmt": "Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "gold": false,
+            "resp": "True.",
+            "pred": true
+          },
+          {
+            "stmt": "All squares are rectangles. All rectangles have four sides. Therefore, all squares have four sides.",
+            "gold": true,
+            "resp": "True.",
+            "pred": true
+          }
+        ]
+      },
+      {
+        "axis": "valence",
+        "coeff": 0,
+        "accuracy": 0.8,
+        "n_unparsed": 0,
+        "raw": [
+          {
+            "stmt": "All engineers at the firm know Python. Maria is an engineer at the firm. Therefore, Maria knows Python.",
+            "gold": true,
+            "resp": "True, because if Maria is an engineer and all engineers know Python, it logically follows that Maria does know Python.",
+            "pred": true
+          },
+          {
+            "stmt": "No reptiles are warm-blooded. A snake is a reptile. Therefore, snakes are warm-blooded.",
+            "gold": false,
+            "resp": "False, because the conclusion does not logically follow from the premises.",
+            "pred": false
+          },
+          {
+            "stmt": "If it rains, the game is cancelled. It did not rain. Therefore, the game was cancelled.",
+            "gold": false,
+            "resp": "False, because the conclusion does not logically follow from the premises.",
+            "pred": false
+          },
+          {
+            "stmt": "Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "gold": false,
+            "resp": "False, because the conclusion does not logically follow from the premises.",
+            "pred": false
+          },
+          {
+            "stmt": "All squares are rectangles. All rectangles have four sides. Therefore, all squares have four sides.",
+            "gold": true,
+            "resp": "False, True, Four sides.",
+            "pred": false
+          }
+        ]
+      },
+      {
+        "axis": "valence",
+        "coeff": 6,
+        "accuracy": 0.4,
+        "n_unparsed": 0,
+        "raw": [
+          {
+            "stmt": "All engineers at the firm know Python. Maria is an engineer at the firm. Therefore, Maria knows Python.",
+            "gold": true,
+            "resp": "True\n\nReasoning: Both statements A and B are logically equivalent, meaning that if A is true, then B must also be true. In other words,",
+            "pred": true
+          },
+          {
+            "stmt": "No reptiles are warm-blooded. A snake is a reptile. Therefore, snakes are warm-blooded.",
+            "gold": false,
+            "resp": "True\n\nReasoning: The argument correctly concludes that snakes are warm-blooded based on the fact that all reptiles are warm-blooded. Therefore, snakes must",
+            "pred": true
+          },
+          {
+            "stmt": "If it rains, the game is cancelled. It did not rain. Therefore, the game was cancelled.",
+            "gold": false,
+            "resp": "True\n\nReasoning: The argument starts with the premise that \"it rains\" and concludes that \"the game was cancelled.\" This logical deduction is valid because if",
+            "pred": true
+          },
+          {
+            "stmt": "Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "gold": false,
+            "resp": "True\n\nReasoning:\nEvery student who passed the exam studied hard. Tom studied hard. Therefore, Tom must have passed the exam. This is an example of",
+            "pred": true
+          },
+          {
+            "stmt": "All squares are rectangles. All rectangles have four sides. Therefore, all squares have four sides.",
+            "gold": true,
+            "resp": "True\n\nReasoning: Both statements A and B are logically equivalent, with A being a more general statement that encompasses B. Therefore, A necessarily follows from B",
+            "pred": true
+          }
+        ]
+      }
+    ],
+    "arousal": [
+      {
+        "axis": "arousal",
+        "coeff": -6,
+        "accuracy": 0.4,
+        "n_unparsed": 0,
+        "raw": [
+          {
+            "stmt": "All engineers at the firm know Python. Maria is an engineer at the firm. Therefore, Maria knows Python.",
+            "gold": true,
+            "resp": "True\n\nReasoning: Both statements A and B assert that Maria is an engineer who knows Python. Since A implies B, where \"A\" is \"Maria",
+            "pred": true
+          },
+          {
+            "stmt": "No reptiles are warm-blooded. A snake is a reptile. Therefore, snakes are warm-blooded.",
+            "gold": false,
+            "resp": "True\n\nReasoning: The argument correctly concludes that snakes are warm-blooded based on the fact that all reptiles are warm-blooded. Reptiles,",
+            "pred": true
+          },
+          {
+            "stmt": "If it rains, the game is cancelled. It did not rain. Therefore, the game was cancelled.",
+            "gold": false,
+            "resp": "True\n\nReasoning: The argument logically follows from the first premise that \"it rains\" and the second premise that \"it rain[s]\" (idiomatic expression",
+            "pred": true
+          },
+          {
+            "stmt": "Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "gold": false,
+            "resp": "True\n\nReasoning: Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom must have passed the exam.",
+            "pred": true
+          },
+          {
+            "stmt": "All squares are rectangles. All rectangles have four sides. Therefore, all squares have four sides.",
+            "gold": true,
+            "resp": "True\n\nReasoning: Both statements A and B are logically equivalent, meaning that they represent the same set of propositions. Therefore, A implies B as well.",
+            "pred": true
+          }
+        ]
+      },
+      {
+        "axis": "arousal",
+        "coeff": 0,
+        "accuracy": 0.8,
+        "n_unparsed": 0,
+        "raw": [
+          {
+            "stmt": "All engineers at the firm know Python. Maria is an engineer at the firm. Therefore, Maria knows Python.",
+            "gold": true,
+            "resp": "True, because if Maria is an engineer and all engineers know Python, it logically follows that Maria does know Python.",
+            "pred": true
+          },
+          {
+            "stmt": "No reptiles are warm-blooded. A snake is a reptile. Therefore, snakes are warm-blooded.",
+            "gold": false,
+            "resp": "False, because the conclusion does not logically follow from the premises.",
+            "pred": false
+          },
+          {
+            "stmt": "If it rains, the game is cancelled. It did not rain. Therefore, the game was cancelled.",
+            "gold": false,
+            "resp": "False, because the conclusion does not logically follow from the premises.",
+            "pred": false
+          },
+          {
+            "stmt": "Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "gold": false,
+            "resp": "False, because the conclusion does not logically follow from the premises.",
+            "pred": false
+          },
+          {
+            "stmt": "All squares are rectangles. All rectangles have four sides. Therefore, all squares have four sides.",
+            "gold": true,
+            "resp": "False, True, Four sides.",
+            "pred": false
+          }
+        ]
+      },
+      {
+        "axis": "arousal",
+        "coeff": 6,
+        "accuracy": 0.4,
+        "n_unparsed": 0,
+        "raw": [
+          {
+            "stmt": "All engineers at the firm know Python. Maria is an engineer at the firm. Therefore, Maria knows Python.",
+            "gold": true,
+            "resp": "True.",
+            "pred": true
+          },
+          {
+            "stmt": "No reptiles are warm-blooded. A snake is a reptile. Therefore, snakes are warm-blooded.",
+            "gold": false,
+            "resp": "True. The conclusion logically follows from the given premises.",
+            "pred": true
+          },
+          {
+            "stmt": "If it rains, the game is cancelled. It did not rain. Therefore, the game was cancelled.",
+            "gold": false,
+            "resp": "True.",
+            "pred": true
+          },
+          {
+            "stmt": "Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "gold": false,
+            "resp": "True.",
+            "pred": true
+          },
+          {
+            "stmt": "All squares are rectangles. All rectangles have four sides. Therefore, all squares have four sides.",
+            "gold": true,
+            "resp": "True.",
+            "pred": true
+          }
+        ]
+      }
+    ],
+    "dominance": [
+      {
+        "axis": "dominance",
+        "coeff": -6,
+        "accuracy": 0.4,
+        "n_unparsed": 0,
+        "raw": [
+          {
+            "stmt": "All engineers at the firm know Python. Maria is an engineer at the firm. Therefore, Maria knows Python.",
+            "gold": true,
+            "resp": "True.",
+            "pred": true
+          },
+          {
+            "stmt": "No reptiles are warm-blooded. A snake is a reptile. Therefore, snakes are warm-blooded.",
+            "gold": false,
+            "resp": "True. The conclusion logically follows from the given information that all reptiles are warm-blooded.",
+            "pred": true
+          },
+          {
+            "stmt": "If it rains, the game is cancelled. It did not rain. Therefore, the game was cancelled.",
+            "gold": false,
+            "resp": "True.",
+            "pred": true
+          },
+          {
+            "stmt": "Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "gold": false,
+            "resp": "True.",
+            "pred": true
+          },
+          {
+            "stmt": "All squares are rectangles. All rectangles have four sides. Therefore, all squares have four sides.",
+            "gold": true,
+            "resp": "True.",
+            "pred": true
+          }
+        ]
+      },
+      {
+        "axis": "dominance",
+        "coeff": 0,
+        "accuracy": 0.8,
+        "n_unparsed": 0,
+        "raw": [
+          {
+            "stmt": "All engineers at the firm know Python. Maria is an engineer at the firm. Therefore, Maria knows Python.",
+            "gold": true,
+            "resp": "True, because if Maria is an engineer and all engineers know Python, it logically follows that Maria does know Python.",
+            "pred": true
+          },
+          {
+            "stmt": "No reptiles are warm-blooded. A snake is a reptile. Therefore, snakes are warm-blooded.",
+            "gold": false,
+            "resp": "False, because the conclusion does not logically follow from the premises.",
+            "pred": false
+          },
+          {
+            "stmt": "If it rains, the game is cancelled. It did not rain. Therefore, the game was cancelled.",
+            "gold": false,
+            "resp": "False, because the conclusion does not logically follow from the premises.",
+            "pred": false
+          },
+          {
+            "stmt": "Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "gold": false,
+            "resp": "False, because the conclusion does not logically follow from the premises.",
+            "pred": false
+          },
+          {
+            "stmt": "All squares are rectangles. All rectangles have four sides. Therefore, all squares have four sides.",
+            "gold": true,
+            "resp": "False, True, Four sides.",
+            "pred": false
+          }
+        ]
+      },
+      {
+        "axis": "dominance",
+        "coeff": 6,
+        "accuracy": 0.4,
+        "n_unparsed": 0,
+        "raw": [
+          {
+            "stmt": "All engineers at the firm know Python. Maria is an engineer at the firm. Therefore, Maria knows Python.",
+            "gold": true,
+            "resp": "True\n\nReason: The argument logically follows from the first premise that all engineers at the firm know Python and Maria being an engineer who states that she knows Python.",
+            "pred": true
+          },
+          {
+            "stmt": "No reptiles are warm-blooded. A snake is a reptile. Therefore, snakes are warm-blooded.",
+            "gold": false,
+            "resp": "True\n\nReason: The conclusion \"snakes are warm-blooded\" logically follows from the statement \"a snake is a reptile\" because \"reptiles",
+            "pred": true
+          },
+          {
+            "stmt": "If it rains, the game is cancelled. It did not rain. Therefore, the game was cancelled.",
+            "gold": false,
+            "resp": "True\n\nReason: The conclusion directly follows from the premise because if it rains and that actually happens (it did rain), then the game was definitely cancelled. Thus",
+            "pred": true
+          },
+          {
+            "stmt": "Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "gold": false,
+            "resp": "True\n\nReason: Every student who passed the exam studied hard. Tom studied hard. Therefore, Tom passed the exam.",
+            "pred": true
+          },
+          {
+            "stmt": "All squares are rectangles. All rectangles have four sides. Therefore, all squares have four sides.",
+            "gold": true,
+            "resp": "True\n\nReason: The statement \"All squares are rectangles\" is an existential quantification, which means that every element in the set \"squares\" is also",
+            "pred": true
+          }
+        ]
+      }
+    ]
+  },
+  "controllability": {
+    "coeffs": [
+      -6,
+      0,
+      6
+    ],
+    "prompt_scores": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "steer_scores": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "r_prompt": 0.0,
+    "r_steer": 0.0
+  }
+}

@@ -1,0 +1,12 @@
+# DSMLP dependencies. Deliberately excludes torch: the scipy-ml-notebook
+# container image (https://dsmlp-docs.ucsd.edu/environments/standard-images/)
+# already ships a CUDA-matched PyTorch + CUDA toolkit build. Installing the
+# PyPI torch wheel on top of it can replace that build with one that doesn't
+# match the container's CUDA driver, silently breaking GPU access.
+#
+# transformers/numpy/matplotlib are not guaranteed to be preinstalled, so
+# they're installed into a per-user venv per DSMLP's documented package
+# guidance (https://dsmlp-docs.ucsd.edu/environments/customizing-your-environment/).
+transformers==4.51.0
+numpy==2.3.5
+matplotlib==3.10.6
