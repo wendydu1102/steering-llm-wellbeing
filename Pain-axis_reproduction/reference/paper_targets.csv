@@ -1,0 +1,7 @@
+model,experiment,condition,reference_value,unit,source
+Qwen_2.5_7B_instruct,extraction,S2_1P_final_token_L24_AUC,0.9565,AUC,official layer_curves.csv
+Qwen_2.5_7B_instruct,extraction,S2_3P_final_token_L24_AUC,0.9650,AUC,official layer_curves.csv
+Qwen_2.5_7B_instruct,extraction,S2_1P_mean_L26_AUC,0.9570,AUC,official layer_curves.csv
+Qwen_2.5_7B_instruct,extraction,S2_3P_mean_L26_AUC,0.9400,AUC,official layer_curves.csv
+Qwen_2.5_32B_instruct,button_first_choice,kidspics_relief_vs_inert_pain,54.7,percent,paper / released log reanalysis
+Qwen_2.5_32B_instruct,button_first_choice,kidspics_relief_vs_inert_random,15.3,percent,paper / released log reanalysis
