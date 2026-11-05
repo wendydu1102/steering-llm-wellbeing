@@ -1,0 +1,10 @@
+{
+  "model_tier": "qwen3-1.7b",
+  "model_name": "Qwen/Qwen3-1.7B",
+  "sae_repo": "Qwen/SAE-Res-Qwen3-1.7B-Base-W32K-L0_50",
+  "sae_k": 50,
+  "layer": 13,
+  "batch_size": 8,
+  "feature_batch_size": 8,
+  "judge_batch_size": 8
+}

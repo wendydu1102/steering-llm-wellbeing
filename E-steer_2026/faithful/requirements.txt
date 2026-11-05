@@ -1,0 +1,18 @@
+# Dependencies for the paper-faithful pipeline (faithful/).
+#
+# torch is NOT listed: on DSMLP the scipy-ml-notebook image already ships a CUDA-matched PyTorch
+# (see ../requirements-dsmlp.txt for the rationale); locally, install torch yourself first.
+# numpy/matplotlib are left unpinned on purpose so a container's own builds are not replaced by a
+# version that could mismatch its PyTorch.
+#
+# transformers>=4.51 is required for the Qwen3 architecture. accelerate is needed by
+# from_pretrained in this transformers version (a missing accelerate raised
+# "init_empty_weights is not defined" during local testing).
+transformers==4.51.0
+accelerate>=1.0
+huggingface-hub>=0.30,<1.0
+datasets>=3.0,<4.0
+numpy
+matplotlib
+math-verify
+pytest

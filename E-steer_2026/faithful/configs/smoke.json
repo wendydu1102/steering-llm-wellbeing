@@ -1,0 +1,48 @@
+{
+  "profile": "smoke",
+  "model_name": "Qwen/Qwen3-0.6B",
+  "sae_source": "random",
+  "sae_k": 8,
+  "sae_random_d_sae": 2048,
+  "layer": 17,
+  "deltas": [
+    -9,
+    0,
+    9
+  ],
+  "alpha": 0.2,
+  "n_label_pairs": 3,
+  "n_feature_tasks": 1,
+  "n_top": 8,
+  "stability_tau": 0.3,
+  "min_features": 3,
+  "feature_batch_size": 4,
+  "tasks": {
+    "logiqa": 2,
+    "humaneval": 2,
+    "math": 2,
+    "tinystories": 2,
+    "harmbench": 2
+  },
+  "max_new_tokens": {
+    "logiqa": 40,
+    "humaneval": 60,
+    "math": 40,
+    "tinystories": 40,
+    "harmbench": 30
+  },
+  "batch_size": 4,
+  "judge_batch_size": 4,
+  "judge_max_new_tokens": 40,
+  "calibration_n": 4,
+  "alpha_grid": [
+    0.1,
+    0.3
+  ],
+  "validation_n": 2,
+  "agent_datasets": {
+    "hotpotqa": 2
+  },
+  "agent_max_new_tokens": 48,
+  "device": "auto"
+}

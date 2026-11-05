@@ -64,6 +64,6 @@ launch-scipy-ml.sh -c "${CPUS}" -m "${MEM_GB}" -g "${GPUS}" -l "gpu-class=${GPU_
 
 echo
 echo "Job submitted. It keeps running after you disconnect."
-echo "Log file: ~/e-steer-dsmlp-<timestamp>.log (created once the container starts; tail -f it)."
+echo "Log file: ${OUT_DIR}/e-steer-dsmlp-<timestamp>.log (created once the container starts; tail -f it)."
 echo "While the pod is alive you can also watch it per"
 echo "https://dsmlp-docs.ucsd.edu/running-jobs/watching-your-job/ (kubectl get pods / kubectl logs)."

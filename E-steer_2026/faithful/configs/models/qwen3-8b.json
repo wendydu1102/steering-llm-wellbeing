@@ -1,0 +1,10 @@
+{
+  "model_tier": "qwen3-8b",
+  "model_name": "Qwen/Qwen3-8B",
+  "sae_repo": "Qwen/SAE-Res-Qwen3-8B-Base-W64K-L0_50",
+  "sae_k": 50,
+  "layer": 17,
+  "batch_size": 16,
+  "feature_batch_size": 16,
+  "judge_batch_size": 16
+}

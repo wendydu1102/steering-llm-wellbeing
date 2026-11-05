@@ -4,10 +4,11 @@
 # container (invoked by launch-scipy-ml.sh -B -- bash run_job.sh).
 set -euo pipefail
 
-# A file in the home directory persists after the pod is deleted, unlike
-# `kubectl logs`, which only works while the pod is alive -- see
-# https://dsmlp-docs.ucsd.edu/running-jobs/checkpointing/
-LOG_FILE="${HOME}/e-steer-dsmlp-$(date +%Y%m%d-%H%M%S).log"
+# A file under the project's results directory persists after the pod is deleted (unlike `kubectl logs`) and is
+# visible from the login node -- https://dsmlp-docs.ucsd.edu/running-jobs/checkpointing/ . The container's ~ is the
+# workspace home, which is NOT the login node's ~, so it is not used for logs.
+mkdir -p '__OUT_DIR__'
+LOG_FILE='__OUT_DIR__/e-steer-dsmlp-'"$(date +%Y%m%d-%H%M%S)"'.log'
 exec > "${LOG_FILE}" 2>&1
 echo "Logging to ${LOG_FILE}"
 

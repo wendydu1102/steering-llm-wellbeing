@@ -1,3 +1,13 @@
+# E-STEER: two tracks
+
+| Track | Where | What it is |
+|---|---|---|
+| **Baseline PoC** (this folder: `steer.py`, `report.py`, `SUMMARY.md`, committed results) | here | A 0.5B-model, regression-based, 5-question proof-of-concept. Useful as a pipeline baseline; **not** a reproduction of the paper. |
+| **Paper-faithful reconstruction** | [`faithful/`](faithful/README.md) | Qwen3-8B + trained TopK SAE (layer 17), contrastive VAD features, Eq. 5-7 steering, the paper's five LLM tasks, latent validation and an agent. Built for DSMLP; **not yet run on a GPU** -- see its README for the fidelity matrix, blockers, resources and run commands. |
+
+The rest of this file documents the **baseline PoC** and its local/DSMLP workflow. The two tracks write to different
+directories (`results/` vs `results_faithful/`) and never share outputs.
+
 # E-STEER proof-of-concept
 
 A small-scale, qualitative reproduction of the steering mechanism from
@@ -150,10 +160,13 @@ corpus; see
 `results/` subfolder under the project directory on DSMLP (git-ignored),
 so a DSMLP run never overwrites the local-run `results.json` /
 `vad_sweep.png` / etc. already committed at the top of this folder.
-Logs are written to `~/e-steer-dsmlp-<timestamp>.log` in your DSMLP home
-directory (not inside the container's ephemeral storage), since a file in
-the home directory persists after the pod is deleted, while `kubectl logs`
-stops working once it is — see
+Logs are written to `<OUT_DIR>/e-steer-dsmlp-<timestamp>.log` (next to the
+results, so they are visible from the login node at `~/E-steer_2026/results/`
+if you rsync'd the project to `~`). They are *not* written to the container's
+`~`, which is the workspace home — a different directory from the login node's
+`~` (the login node's `~` appears as `private/` in containers). A file on
+persistent storage survives pod deletion, while `kubectl logs` stops working
+once the pod is gone — see
 [Checkpointing & Logging](https://dsmlp-docs.ucsd.edu/running-jobs/checkpointing/).
 
 **Why no torch in `requirements-dsmlp.txt`:** the `scipy-ml-notebook`
