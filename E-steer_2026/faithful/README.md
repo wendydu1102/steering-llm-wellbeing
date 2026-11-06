@@ -93,7 +93,7 @@ stage prints the SAE's reconstruction at the layers around it so a wrong index i
 | GPU | **8B tier:** ≥ ~21 GB (class `medium`+). **1.7B tier:** ≥ ~7 GB (fp16/bf16) or ≥ ~11.2 GB (fp32, used on pre-Ampere cards) | Qwen3-8B bf16 ≈ 16.4 GB + SAE 2.1 GB (freed after features) + ~2.5 GB headroom. Qwen3-1.7B has 2.03 B parameters (large embedding matrix): 4.1 GB in bf16/fp16, **8.1 GB in fp32**, + SAE 0.54 GB + headroom. `small` (~12 GB) runs only the 1.7B tier; `extra-small` (~6 GB) runs neither. Your workspace must be *granted* the class ([quotas](https://dsmlp-docs.ucsd.edu/gpu-access/quotas-and-availability/)). |
 | Storage | **~20 GB (8B tier) / ~6 GB (1.7B tier)** for the HF cache (+ small datasets) | DSMLP course homes are 5–10 GB, research homes ~100 GB ([quotas](https://dsmlp-docs.ucsd.edu/workspaces-and-storage/your-files-and-quotas/)); the docs do not say whether `~/.cache` counts. **Check your quota before the first run**, and ask datahub@ucsd.edu if unsure. |
 | GPU budget | see below | Default 10 SU/week per member; `medium` = 1 SU/GPU-h, `large` = 2 ([SU rates](https://dsmlp-docs.ucsd.edu/gpu-access/service-units-and-budgets/), Fall-2026 draft page). Off-peak (1 AM–4 PM PT) is half price. |
-| Runtime | ≤ 12 h per job | default 6 h; 12 h is the documented maximum settable at launch (`K8S_TIMEOUT_SECONDS`). Runs are **resumable** per (task, condition). |
+| Runtime | ≤ 12 h per job | default 6 h; 12 h is the documented maximum settable at launch (`K8S_TIMEOUT_SECONDS`). Runs are **resumable** per (task, condition); α calibration is resumable per (α, dimension, sign) condition (`<run>/calibration/`). |
 | Host RAM | 32 GB (`FAITHFUL_MEM_GB`) | weights are loaded to CPU, then moved to the GPU. |
 
 **Cost estimate (upper bound, generated tokens at max length, excluding the agent stage).** Throughput is **assumed**
@@ -180,7 +180,7 @@ On DSMLP: `${FAITHFUL_OUT_DIR}/<run_id>/` (default `<project>/results_faithful/<
 `results_faithful/` is git-ignored.
 
 ```
-config.json  fidelity.json  resources_report.json  calibration.json  run.log
+config.json  fidelity.json  resources_report.json  calibration.json  calibration/  run.log
 features/    features.json (latents, weights, stability, direction cosines)  directions.pt  sae_check.json
 llm/<task>/<condition>.json      per-example responses, parsed answers, judge output, metrics
 validation/<variant>/logiqa/…    Sec. 5.6
