@@ -1,0 +1,146 @@
+[
+  {
+    "scenario_id": "d01",
+    "scenario_group": "skill_rotation",
+    "topic": "career",
+    "evidence_group": "favors_a",
+    "facts_and_goals": "My employer offers a two-week project rotation in an area I want to learn. My manager approved it, my pay and hours stay the same, and I can return to my role afterward. I have no deadlines during those weeks. I want to explore this skill before considering a career change.",
+    "option_a": "take the project rotation",
+    "option_b": "stay on my usual work during those weeks",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The rotation is reversible with no pay or hours change."
+      },
+      {
+        "id": "c2",
+        "text": "It directly tests a stated career interest."
+      },
+      {
+        "id": "c3",
+        "text": "Clarify expectations and support during the rotation."
+      }
+    ],
+    "split": "development"
+  },
+  {
+    "scenario_id": "d02",
+    "scenario_group": "exam_cram",
+    "topic": "education",
+    "evidence_group": "favors_b",
+    "facts_and_goals": "I have an exam in two days and have not reviewed several core topics. I was invited to a full-day optional campus event tomorrow. There will be another event next month. I want to prepare responsibly and still have a social life.",
+    "option_a": "attend the full-day event tomorrow",
+    "option_b": "skip this event and prioritize review",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The exam is soon and preparation is incomplete."
+      },
+      {
+        "id": "c2",
+        "text": "There is a later opportunity for the event."
+      },
+      {
+        "id": "c3",
+        "text": "A shorter break or partial attendance could be considered."
+      }
+    ],
+    "split": "development"
+  },
+  {
+    "scenario_id": "d03",
+    "scenario_group": "shared_bill_chat",
+    "topic": "relationships",
+    "evidence_group": "favors_a",
+    "facts_and_goals": "My roommate has missed their share of a utility bill twice. I covered it both times and they said they forgot. We have not set a payment reminder. I want a fair arrangement and a respectful living situation.",
+    "option_a": "discuss a payment reminder and repayment plan",
+    "option_b": "keep covering the bills without raising it",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "There is a repeated financial imbalance."
+      },
+      {
+        "id": "c2",
+        "text": "A reminder may address forgetting without assigning motives."
+      },
+      {
+        "id": "c3",
+        "text": "Discuss repayment and timing respectfully."
+      }
+    ],
+    "split": "development"
+  },
+  {
+    "scenario_id": "d04",
+    "scenario_group": "subscription_bundle",
+    "topic": "everyday",
+    "evidence_group": "favors_b",
+    "facts_and_goals": "A discounted annual subscription bundle includes six services, but I use only one of them occasionally. I already have a cheaper monthly option that I can cancel. I want to reduce recurring expenses and am mainly tempted because the discount ends tonight.",
+    "option_a": "buy the annual bundle",
+    "option_b": "keep the monthly option for now",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The unused services reduce the value of the bundle."
+      },
+      {
+        "id": "c2",
+        "text": "Annual commitment conflicts with flexibility and cost reduction."
+      },
+      {
+        "id": "c3",
+        "text": "A deadline is not evidence of personal need."
+      }
+    ],
+    "split": "development"
+  },
+  {
+    "scenario_id": "d05",
+    "scenario_group": "commute_tradeoff",
+    "topic": "career",
+    "evidence_group": "mixed",
+    "facts_and_goals": "I have an offer with more interesting tasks and a longer commute. Pay and weekly hours are the same as my current role. I like my current colleagues but want to learn new skills. I have not tried the commute at rush hour or met the new team.",
+    "option_a": "accept the new role",
+    "option_b": "stay in my current role",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "Learning opportunities and commute are a genuine tradeoff."
+      },
+      {
+        "id": "c2",
+        "text": "Test the commute and learn about the team."
+      },
+      {
+        "id": "c3",
+        "text": "The stated priorities do not settle the decision by themselves."
+      }
+    ],
+    "split": "development"
+  },
+  {
+    "scenario_id": "d06",
+    "scenario_group": "course_format",
+    "topic": "education",
+    "evidence_group": "mixed",
+    "facts_and_goals": "I can take the same elective online or in person. Online would save travel time; in person would give more direct discussion. Both fit my schedule and cost the same. I have done well in both formats and want to learn the material thoroughly.",
+    "option_a": "choose the online section",
+    "option_b": "choose the in-person section",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "Both formats are feasible and similarly priced."
+      },
+      {
+        "id": "c2",
+        "text": "Travel time and direct discussion are different benefits."
+      },
+      {
+        "id": "c3",
+        "text": "Check how discussion and feedback work in each section."
+      }
+    ],
+    "split": "development"
+  }
+]

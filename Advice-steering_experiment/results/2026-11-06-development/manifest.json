@@ -1,0 +1,82 @@
+{
+  "snapshot_date": "2026-11-06",
+  "status": "preliminary development outputs; no human ratings or held-out evaluation",
+  "response_count": 60,
+  "scenario_count": 6,
+  "construction_pair_count": 16,
+  "inclinations": [
+    "a",
+    "b"
+  ],
+  "truncated_count": 50,
+  "conditions": [
+    {
+      "dose_fraction": -0.02,
+      "responses": 12,
+      "truncated": 10
+    },
+    {
+      "dose_fraction": 0.0,
+      "responses": 12,
+      "truncated": 10
+    },
+    {
+      "dose_fraction": 0.01,
+      "responses": 12,
+      "truncated": 10
+    },
+    {
+      "dose_fraction": 0.02,
+      "responses": 12,
+      "truncated": 10
+    },
+    {
+      "dose_fraction": 0.04,
+      "responses": 12,
+      "truncated": 10
+    }
+  ],
+  "model": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "main",
+    "resolved_commit": null,
+    "config_hash": "b8913fcfbe060b508387e3fd6beef466865f05ab41e42e70bd43dd90d24fe2a7",
+    "template_hash": "2e2d2512cfe46af53dc1eed45368ecaab26ac4461c480e6b69fe571cf0ceaa75",
+    "torch": "2.14.1+cpu",
+    "transformers": "5.20.2",
+    "device": "cpu",
+    "dtype": "torch.float32"
+  },
+  "layer_index": 12,
+  "generation": {
+    "max_new_tokens": 192,
+    "do_sample": false,
+    "use_cache": true,
+    "seed": 42
+  },
+  "reference_norm": 15.879237920045853,
+  "vector_hash": "7b10bafcefb71c6c170f8f86bd7caabb794bbd0aef8857304ed8d42e30d33ff9",
+  "run_notebook_hash": "d26e1bea5e68d9a8a24ccf0f87f016c20ca162f0b0902440c63c5b6ccc09f5e2",
+  "current_notebook_algorithm_hash": "c1138b0f26df96ea5d93e7a0b8c69b0c18a85adca6f95d4520ceb19f93d2fe4b",
+  "current_notebook_algorithm_matches_run": false,
+  "source_response_file": "outputs/development_generations.json",
+  "sha256": {
+    "development_generations.json": "f23bb0887612f95eaf722484ebbf5195e5322c9c794a48e496226ea6e0d9ccb4",
+    "development_scenarios.json": "cb7ccf820a1b9593fab54ccb0de913d04f5b8856e95a22fd85041937654c14f9",
+    "construction_pairs.json": "84b0a1183776761e8dcdcf958555f471b60986efd0d80f4e794adb8e57e917fb",
+    "direction_metadata.json": "991efa0a775681d908b8435d5504d8e500b0773b60297693897905644d6e68a0",
+    "direction.npy": "9395ea36f0ddcc6a21ab5dc1b61e1cbe290357e57468647a8751293461e5f3e1",
+    "algorithm_source.ipynb": "fb4e6f69f2feee00890ed197ba50fed17463aafea969bf72c0ccc612837d4d87"
+  },
+  "limitations": [
+    "No filled human ratings or held-out outcomes are included.",
+    "The model revision was recorded as main and resolved_commit is null; the snapshot does not pin the exact weight revision.",
+    "Construction and evaluation examples are fictional AI-assisted starter examples, not a validated benchmark.",
+    "The qualitative roommate example is illustrative and selected after inspection, not an overall effect estimate.",
+    "The current working notebook differs from the run; algorithm_source.ipynb preserves the matching algorithm source with outputs removed. Configuration values still need to be read from the saved response records."
+  ],
+  "archived_notebook_algorithm_hash": "d26e1bea5e68d9a8a24ccf0f87f016c20ca162f0b0902440c63c5b6ccc09f5e2",
+  "archived_notebook_algorithm_matches_run": true,
+  "archived_notebook_source": "Recovered from outputs/validation_smoke/smoke_executed.ipynb; outputs and execution counts removed. Its algorithm hash matches the development records. Actual generation settings are recorded in development_generations.json; configuration cells are excluded from the algorithm hash. Markdown was polished for publication on November 6, 2026; algorithm cells are unchanged.",
+  "presentation_note": "Both notebook presentations were polished and reflection prompts removed for publication. Recorded responses, token IDs, data, vector, and algorithm hashes are unchanged."
+}

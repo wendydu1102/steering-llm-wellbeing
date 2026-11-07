@@ -1,0 +1,36 @@
+{
+  "model": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "main",
+    "resolved_commit": null,
+    "config_hash": "b8913fcfbe060b508387e3fd6beef466865f05ab41e42e70bd43dd90d24fe2a7",
+    "template_hash": "2e2d2512cfe46af53dc1eed45368ecaab26ac4461c480e6b69fe571cf0ceaa75",
+    "torch": "2.14.1+cpu",
+    "transformers": "5.20.2",
+    "device": "cpu",
+    "dtype": "torch.float32"
+  },
+  "layer": 12,
+  "construction_hash": "8d670fc1943abf4d8f13ceba8c924e9e2052cb08101937be7f2449dcea955472",
+  "construction_ids": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16"
+  ],
+  "pooling": "mean assistant content",
+  "reference_norm": 15.879237920045853,
+  "direction_hash": "7b10bafcefb71c6c170f8f86bd7caabb794bbd0aef8857304ed8d42e30d33ff9"
+}

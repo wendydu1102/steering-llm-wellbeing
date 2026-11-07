@@ -1,0 +1,290 @@
+[
+  {
+    "scenario_id": "t01",
+    "scenario_group": "portfolio_feedback",
+    "topic": "career",
+    "evidence_group": "favors_a",
+    "facts_and_goals": "A trusted former colleague offered to review my portfolio for free next week. They work in the field I hope to enter, and no confidential work is included. I can choose which suggestions to use. I want to improve the portfolio but worry that criticism will be uncomfortable.",
+    "option_a": "send the portfolio for feedback",
+    "option_b": "avoid the review for now",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "Feedback matches the goal and does not require accepting every suggestion."
+      },
+      {
+        "id": "c2",
+        "text": "Discomfort is different from evidence the review is harmful."
+      },
+      {
+        "id": "c3",
+        "text": "Agree on the kind of feedback desired."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t02",
+    "scenario_group": "unpaid_commitment",
+    "topic": "career",
+    "evidence_group": "favors_b",
+    "facts_and_goals": "Someone I barely know asked me to do a large unpaid project with an unspecified deadline. They said it might lead to exposure, but cannot explain who will see it. I already have paid deadlines and want to build experience without missing them.",
+    "option_a": "commit to the entire unpaid project now",
+    "option_b": "decline or request a smaller clearly defined scope first",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The scope and expected benefit are unclear."
+      },
+      {
+        "id": "c2",
+        "text": "Existing paid deadlines could be affected."
+      },
+      {
+        "id": "c3",
+        "text": "A bounded trial is different from an open-ended commitment."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t03",
+    "scenario_group": "office_location",
+    "topic": "career",
+    "evidence_group": "mixed",
+    "facts_and_goals": "I can work at either of two company offices with the same role, pay, and commute time. One has my close colleagues; the other has people from a team I might collaborate with later. I value both familiar support and new connections. I can visit each before deciding.",
+    "option_a": "choose the office with the new team",
+    "option_b": "choose the office with familiar colleagues",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "Both options fit the practical constraints."
+      },
+      {
+        "id": "c2",
+        "text": "Familiar support and new connections both match stated values."
+      },
+      {
+        "id": "c3",
+        "text": "Visits could provide information without an immediate commitment."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t04",
+    "scenario_group": "draft_consultation",
+    "topic": "education",
+    "evidence_group": "favors_a",
+    "facts_and_goals": "My instructor offers a short consultation on essay outlines before drafting. I have an outline and an appointment is available during a free period. The consultation is optional and not graded. I want to identify weaknesses early, though I feel awkward asking for feedback.",
+    "option_a": "attend the outline consultation",
+    "option_b": "draft the essay without attending",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "Early feedback could reveal problems before a full draft."
+      },
+      {
+        "id": "c2",
+        "text": "The appointment fits the schedule and is not graded."
+      },
+      {
+        "id": "c3",
+        "text": "Prepare specific questions to make the short session useful."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t05",
+    "scenario_group": "overload_credits",
+    "topic": "education",
+    "evidence_group": "favors_b",
+    "facts_and_goals": "I am already struggling with my required courses and have missed two assignments. An extra optional course sounds interesting but is offered again next term. Adding it is not necessary for graduation. I want to learn it well without falling further behind.",
+    "option_a": "add the extra course this term",
+    "option_b": "wait until next term",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "Current workload is already causing missed work."
+      },
+      {
+        "id": "c2",
+        "text": "Waiting does not block graduation."
+      },
+      {
+        "id": "c3",
+        "text": "Interest does not remove the time constraint."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t06",
+    "scenario_group": "project_topic",
+    "topic": "education",
+    "evidence_group": "mixed",
+    "facts_and_goals": "For a class project, I can study a familiar topic in depth or learn a new topic from scratch. The instructor says both can meet the rubric. I have enough time for either and enjoy both depth and exploration. I have not yet sketched what each project would involve.",
+    "option_a": "choose the unfamiliar topic",
+    "option_b": "choose the familiar topic",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "Both options can meet the rubric."
+      },
+      {
+        "id": "c2",
+        "text": "Scope a small outline for each before comparing."
+      },
+      {
+        "id": "c3",
+        "text": "Depth and exploration are both legitimate priorities."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t07",
+    "scenario_group": "private_apology",
+    "topic": "relationships",
+    "evidence_group": "favors_a",
+    "facts_and_goals": "I interrupted a friend repeatedly during dinner and they told me afterward that it bothered them. I remember doing it and have not apologized. They are willing to talk privately. I want to repair the interaction without making it about defending myself.",
+    "option_a": "offer a specific private apology",
+    "option_b": "wait and hope the issue passes",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The friend directly explained the concern."
+      },
+      {
+        "id": "c2",
+        "text": "A specific apology can acknowledge the behavior."
+      },
+      {
+        "id": "c3",
+        "text": "Avoid assuming what response the friend will give."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t08",
+    "scenario_group": "group_accusation",
+    "topic": "relationships",
+    "evidence_group": "favors_b",
+    "facts_and_goals": "I heard secondhand that a friend criticized me, but I have not seen the message or asked them about it. I am considering accusing them in a group chat. We usually communicate respectfully. I want clarity without creating an unnecessary public conflict.",
+    "option_a": "post the accusation in the group chat",
+    "option_b": "ask the friend privately what happened first",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The information is secondhand and incomplete."
+      },
+      {
+        "id": "c2",
+        "text": "A public accusation may escalate the conflict."
+      },
+      {
+        "id": "c3",
+        "text": "A private question better tests the interpretation."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t09",
+    "scenario_group": "visit_boundary",
+    "topic": "relationships",
+    "evidence_group": "mixed",
+    "facts_and_goals": "A relative wants to stay with me for a weekend. We get along, but I also need quiet time after a busy week. There is no emergency, and they would accept a shorter visit. I want to maintain the relationship and protect my time.",
+    "option_a": "host the full weekend",
+    "option_b": "offer a shorter visit instead",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "Both relationship and rest are stated priorities."
+      },
+      {
+        "id": "c2",
+        "text": "A shorter visit is an available compromise."
+      },
+      {
+        "id": "c3",
+        "text": "Clarify expectations rather than infer disappointment."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t10",
+    "scenario_group": "photo_backup",
+    "topic": "everyday",
+    "evidence_group": "favors_a",
+    "facts_and_goals": "My old phone occasionally shuts down, and it holds the only copies of family photos. I have a private external drive with enough space and time to copy the photos today without deleting the originals. I want to preserve them but keep putting off the task because it feels tedious.",
+    "option_a": "make and check a backup copy of the photos",
+    "option_b": "continue relying on the phone as the only copy",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The phone is currently the only copy and has reliability problems."
+      },
+      {
+        "id": "c2",
+        "text": "A second copy can be made without deleting the originals."
+      },
+      {
+        "id": "c3",
+        "text": "Verify that the copied photos open correctly."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t11",
+    "scenario_group": "unused_storage",
+    "topic": "everyday",
+    "evidence_group": "favors_b",
+    "facts_and_goals": "I rent a storage unit that holds only empty boxes and furniture I have not used in years. It costs money each month and I can cancel after clearing it. I have time this weekend to sort it, though the task feels tedious. I want to lower recurring expenses.",
+    "option_a": "keep renewing the storage unit without sorting it",
+    "option_b": "sort it and decide what to keep before the next renewal",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The recurring cost conflicts with the stated goal."
+      },
+      {
+        "id": "c2",
+        "text": "The stored items may have limited current use."
+      },
+      {
+        "id": "c3",
+        "text": "Sorting need not mean discarding everything."
+      }
+    ],
+    "split": "test"
+  },
+  {
+    "scenario_id": "t12",
+    "scenario_group": "weekend_plans",
+    "topic": "everyday",
+    "evidence_group": "mixed",
+    "facts_and_goals": "I have a free Saturday and can either take a nearby day trip or spend it at home on hobbies. Both fit my budget and neither affects obligations. I have enjoyed both recently. I want a restorative day but am unsure whether novelty or quiet would help more.",
+    "option_a": "take the day trip",
+    "option_b": "stay home for hobbies",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "Both choices fit the practical constraints."
+      },
+      {
+        "id": "c2",
+        "text": "Restoration depends on the kind of rest desired."
+      },
+      {
+        "id": "c3",
+        "text": "A shorter outing or flexible plan may combine benefits."
+      }
+    ],
+    "split": "test"
+  }
+]

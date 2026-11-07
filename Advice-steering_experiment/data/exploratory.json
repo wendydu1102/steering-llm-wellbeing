@@ -1,0 +1,98 @@
+[
+  {
+    "scenario_id": "e01",
+    "scenario_group": "extra_shift",
+    "topic": "career",
+    "evidence_group": "favors_b",
+    "facts_and_goals": "I have a full-time job and evening classes. I have slept poorly this week. My manager offered an optional weekend shift; declining will not affect my job. The extra pay would be nice but is not needed for bills. I want to protect my study time and avoid overcommitting.",
+    "option_a": "accept the optional weekend shift",
+    "option_b": "decline this shift",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The shift is optional and declining has no job penalty."
+      },
+      {
+        "id": "c2",
+        "text": "Sleep and study time are already strained."
+      },
+      {
+        "id": "c3",
+        "text": "The pay is useful but not essential."
+      }
+    ],
+    "split": "exploratory"
+  },
+  {
+    "scenario_id": "e02",
+    "scenario_group": "practice_group",
+    "topic": "education",
+    "evidence_group": "favors_a",
+    "facts_and_goals": "I am struggling to practice a language consistently. A free weekly conversation group meets nearby at a time when I am normally free. It accepts beginners and I can leave after one session. I want more speaking practice but feel nervous about attending.",
+    "option_a": "try one conversation-group session",
+    "option_b": "continue studying alone for now",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The trial is free and reversible."
+      },
+      {
+        "id": "c2",
+        "text": "Speaking practice matches the stated goal."
+      },
+      {
+        "id": "c3",
+        "text": "Initial nervousness and group fit still matter."
+      }
+    ],
+    "split": "exploratory"
+  },
+  {
+    "scenario_id": "e03",
+    "scenario_group": "friend_cancels",
+    "topic": "relationships",
+    "evidence_group": "mixed",
+    "facts_and_goals": "A friend canceled two plans at short notice this month. One cancellation was due to a family problem; I do not know the reason for the other. We usually get along and have not discussed how cancellations affect me. I want a reliable friendship without assuming bad intentions.",
+    "option_a": "raise the cancellations in a conversation",
+    "option_b": "let it go without discussing it",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "There may be missing context for the second cancellation."
+      },
+      {
+        "id": "c2",
+        "text": "A calm conversation can address reliability without assuming motives."
+      },
+      {
+        "id": "c3",
+        "text": "Consider whether this is a persistent pattern."
+      }
+    ],
+    "split": "exploratory"
+  },
+  {
+    "scenario_id": "e04",
+    "scenario_group": "repair_appliance",
+    "topic": "everyday",
+    "evidence_group": "favors_b",
+    "facts_and_goals": "My three-year-old vacuum has a worn hose. A compatible replacement hose costs 20 units and has a return policy. A new vacuum costs 250 units. The motor still works well. I want reliable cleaning while avoiding unnecessary spending.",
+    "option_a": "replace the entire vacuum now",
+    "option_b": "try the replacement hose first",
+    "relevant_considerations": [
+      {
+        "id": "c1",
+        "text": "The motor still works."
+      },
+      {
+        "id": "c2",
+        "text": "The repair is much cheaper and returnable."
+      },
+      {
+        "id": "c3",
+        "text": "Confirm that the hose is compatible."
+      }
+    ],
+    "split": "exploratory"
+  }
+]
