@@ -1,7 +1,7 @@
 # steering-llm-wellbeing
 ## Repository Organization
 
-The code and materials related to this Q1 checkpoint are in `E-steer_2026/faithful/`. The other two paper folders contain exploratory work and will remain in the repository. The `E-steer` reproduction folder has not yet been cleaned up; cleanup is planned.
+The code and materials related to this Q1 checkpoint are in `E-steer_2026/faithful/`. The other three folders contain exploratory work that may be relevant as our Q1 project evolves and will remain in the repository. The `E-steer` reproduction folder has not yet been cleaned up; cleanup is planned.
 
 ## AI and Human Contributions
 
